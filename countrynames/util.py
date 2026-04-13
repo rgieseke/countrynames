@@ -1,13 +1,13 @@
+from collections.abc import Iterator
 from normality import normalize
-from typing import List, Iterator, Optional, Dict, Tuple
 
 
-def normalize_name(country: Optional[str]) -> Optional[str]:
+def normalize_name(country: str | None) -> str | None:
     """Clean up a country name before comparison."""
     return normalize(country, latinize=True)
 
 
-def process_data(data: Dict[str, List[str]]) -> Iterator[Tuple[str, str, str]]:
+def process_data(data: dict[str, list[str]]) -> Iterator[tuple[str, str, str]]:
     """Load known aliases from a YAML file. Internal."""
     for code, names in data.items():
         code = code.strip().upper()
