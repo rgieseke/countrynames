@@ -9,6 +9,7 @@ mappings = {
     "AI": "AIA",
     "AL": "ALB",
     "AM": "ARM",
+    "AN": "ANT",
     "AO": "AGO",
     "AQ": "ATA",
     "AR": "ARG",
